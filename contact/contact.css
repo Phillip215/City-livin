@@ -1,0 +1,75 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60.5%;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(../assets/elijah-chen-EWFUHJpIZr8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Train One", cursive;
+}
+
+.main-menu {
+  background: black;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-menu li a {
+  padding: 20px 20px;
+  display: inline-block;
+  color: #d5a69a;
+  font-size: 2rem;
+}
+
+.main-menu li a:hover {
+  color: #ffd700;
+}
+
+.main-menu li:hover,
+.main-menu li:focus-within {
+  background-color: black;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-menu li a {
+    padding: 15px 15px;
+    display: inline-block;
+    color: #d5a69a;
+    font-size: 1.8rem;
+  }
+}

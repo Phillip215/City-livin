@@ -1,0 +1,140 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60.5%;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(../assets/fung-martin-lttHbW0FAD4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Train One", cursive;
+}
+
+.main-menu {
+  background: black;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-menu li a {
+  padding: 20px 20px;
+  display: inline-block;
+  color: #d5a69a;
+  font-size: 2rem;
+}
+
+.main-menu li a:hover {
+  color: #ffd700;
+}
+
+.main-menu li:hover,
+.main-menu li:focus-within {
+  background-color: black;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Dela Gothic One";
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  color: #829eb2;
+  opacity: 0.8;
+}
+
+h1:hover {
+  color: #ffd700;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 300px;
+  color: aliceblue;
+  background-color: black;
+  border: none;
+  opacity: 0.6;
+}
+
+#huh {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 300px;
+  margin: 15px;
+  border-radius: 55%;
+}
+
+.two {
+  display: none;
+}
+
+/* Media Qs */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-menu li a {
+    padding: 15px 15px;
+    display: inline-block;
+    color: #d5a69a;
+    font-size: 1.75rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  img {
+    max-width: 250px;
+  }
+}

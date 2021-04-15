@@ -1,0 +1,156 @@
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 60.5%;
+  font-family: "Train One", cursive;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(../assets/alfred-boivin-5ovKP3ILPfw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-menu {
+  background: black;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-menu li a {
+  padding: 10px 10px;
+  display: inline-block;
+  color: #d5a69a;
+  font-size: 2rem;
+}
+
+.main-menu li a:hover {
+  color: gold;
+}
+
+.main-menu li:hover,
+.main-menu li:focus-within {
+  background-color: black;
+}
+
+div,
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: "Dela Gothic One";
+  color: #afeeee;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2.5px;
+  opacity: 0.6;
+}
+
+h1:hover {
+  color: #ffd700;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 250px;
+  border: none;
+  color: aliceblue;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#ashell {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 120px;
+  height: 40px;
+  color: #afeeee;
+  background-color: black;
+  border: none;
+  opacity: 0.7;
+}
+
+main {
+  margin-top: 10px;
+  font-family: "Dela Gothic One";
+}
+
+li {
+  max-width: 300px;
+  max-height: 400px;
+  font-size: 1.5rem;
+  list-style: none;
+  color: #afeeee;
+  background-color: black;
+  opacity: 0.9;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+#content li p {
+  margin-left: 20px;
+}
+
+#content li a {
+  margin-left: 28%;
+}
+
+#content li a:hover {
+  color: #ffd700;
+}
+
+img {
+  width: 230px;
+  max-height: 100px;
+  margin-left: 5px;
+}
+
+/* Media Qs */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-menu li a {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+  .main-menu {
+    background: black;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
